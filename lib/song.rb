@@ -35,7 +35,7 @@ class Song
     @@genres.each do |genre|
      #binding.pry
       if genre_count[genre]	
-      #if genre_count.has_key?(genre)
+      if genre_count.has_key?(genre)
         genre_count[genre]+=1
       else
         genre_count[genre] = 1
