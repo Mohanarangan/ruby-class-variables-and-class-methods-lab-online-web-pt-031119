@@ -36,14 +36,14 @@ class Song
      #binding.pry
       if genre_count.has_key?(genre)
         genre_count[genre]+=1
-        
-        else
+      else
         genre_count[genre] = 1
-        end
-        end
-        genre_count
+      end
+      end
+      genre_count
   end
     
+
     def self.artist_count
     artist_count={}
     @@artists.each do |artist, value|
@@ -56,4 +56,6 @@ class Song
         end
         artist_count
   end
+    
+
 end
